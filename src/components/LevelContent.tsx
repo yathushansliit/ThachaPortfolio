@@ -46,7 +46,7 @@ export default function LevelContent({ level }: { level: string }) {
 
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-2 ml-6 md:ml-3">Semester 1</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ml-24 md:ml-7">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ml-20 lg:ml-20 md:ml-9">
           {data.semester1.map((subject, idx) => (
             <Card key={idx} title={subject.title} url={subject.url} />
           ))}
@@ -55,7 +55,7 @@ export default function LevelContent({ level }: { level: string }) {
 
       <div>
         <h3 className="text-lg font-semibold mb-2 ml-6 md:ml-3">Semester 2</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ml-24 md:ml-7">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ml-20 lg:ml-20 md:ml-9">
           {data.semester2.map((subject, idx) => (
             <Card key={idx} title={subject.title} url={subject.url} />
           ))}
