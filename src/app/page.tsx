@@ -14,7 +14,7 @@ export default function Home() {
         <img
           src="/images/banner.png"
           alt="Banner"
-          className="w-full h-[500px] md:h-[200px] md:w-[200px] object-cover"
+          className="w-full h-[500px] object-cover"
         />
         <LevelContent level={selectedLevel} />
       </div>
