@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 
-export default function Navbar({ onLevelChange }: { onLevelChange: (level: string) => void }) {
+export default function Navbar({ onSectionChange }: { onSectionChange: (section: string) => void }) {
     const levels = ['Level 3', 'Level 4']
     const [menuOpen, setMenuOpen] = useState(false)
     const [levelsOpen, setLevelsOpen] = useState(false)
@@ -36,7 +36,7 @@ export default function Navbar({ onLevelChange }: { onLevelChange: (level: strin
                                 <button
                                     key={level}
                                     onClick={() => {
-                                        onLevelChange(level)
+                                        onSectionChange(level)
                                         setLevelsOpen(false)
                                         setMenuOpen(false)
                                     }}
@@ -49,8 +49,8 @@ export default function Navbar({ onLevelChange }: { onLevelChange: (level: strin
                     )}
                 </div>
                 <Link href="https://drive.google.com/drive/folders/1-S74NoEG_0-NY5R3vY87Gs4h3qTrUMSr" onClick={() => setMenuOpen(false)}>Presentations</Link>
-                <Link href="#" onClick={() => setMenuOpen(false)}>Videos</Link>
-                <Link href="#" onClick={() => setMenuOpen(false)}>Model Papers</Link>
+                <Link href="#" onClick={() => onSectionChange('Videos')} className="hover:text-[#C68313]">Videos</Link>
+                <Link href="https://drive.google.com/drive/folders/10rQqKBBJG2aALAwA9xAAsoFZs7xPeNfa" onClick={() => setMenuOpen(false)}>Model Papers</Link>
                 <Link href="#" onClick={() => setMenuOpen(false)}>Books</Link>
             </div>
         </nav>

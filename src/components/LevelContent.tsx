@@ -16,21 +16,27 @@ const subjects: Record<string, {
       { title: 'Approaches to Learning and Teaching', url: 'https://drive.google.com/file/d/1-wipauZcuyDazvvqOr4sgbW200-L9e_v/edit' },
     ],
     semester2: [
-      { title: 'Bio Mechanic 1', url: 'https://drive.google.com/link9' },
-      { title: 'Bio Mechanic 2', url: 'https://drive.google.com/link10' },
-      { title: 'Bio Mechanic 3', url: 'https://drive.google.com/link11' },
+      { title: 'PLT', url: 'https://drive.google.com/drive/folders/102InMn22cn47U9g4GQ8rfCo7pTe94M54' },
+      { title: 'Inclusive Education', url: 'https://drive.google.com/drive/folders/102pQ130Cs6_-AGBZU3-9Ggcrei_fF5FA' },
+      { title: 'Performance Assessment', url: 'https://drive.google.com/drive/folders/10H6loJasOnWzEtGg1GbrVD50QN7Stng7' },
+      { title: 'Nutrition for Health & Physical Activity', url: 'https://drive.google.com/drive/folders/10Jl0bK5kuZfwFARJASiVq75jDnwgZJth' },
+      { title: 'GIT', url: 'https://drive.google.com/drive/folders/10MBk6TiBAxAGlFtn6p0NVWhBd8swB45W' }
     ],
   },
   'Level 4': {
     semester1: [
-      { title: 'Bio Mechanic 1', url: 'https://drive.google.com/link12' },
-      { title: 'Bio Mechanic 2', url: 'https://drive.google.com/link13' },
-      { title: 'Bio Mechanic 3', url: 'https://drive.google.com/link14' },
+      { title: 'DTLT', url: 'https://drive.google.com/drive/folders/10MxHuFvdxDDY6ffYVuunF7cNQ7XpVuhd' },
+      { title: 'Teaching Practice', url: 'https://drive.google.com/drive/folders/10P8K1Mh5wSWET8XMHMdxqkIt_YOco6zt' },
+      { title: 'Sports Psychology & Sociology', url: 'https://drive.google.com/drive/folders/10Q2jEhD2Nba9GwoMXa0VgcQAcg6-G8Fk' },
+      { title: 'Athletic II', url: 'https://drive.google.com/drive/folders/10TwtUgUcKTAGrYk-jcHd-gqd7LXqLkEt' },
+      { title: 'Games 1', url: 'https://drive.google.com/drive/folders/10_hI_8ERgKLwwRJ29umNA2LG4xAseStZ' },
+      { title: 'Lead to Learn', url: 'https://drive.google.com/drive/folders/10fNlupzL3T59Phto38aER_aGMGJLm9z6' },
+      { title: 'Research Methods in Education', url: 'https://drive.google.com/drive/folders/10he2hYyG4I9nITWyMV5SBIFss01WJxmV' },
     ],
     semester2: [
-      { title: 'Bio Mechanic 1', url: 'https://drive.google.com/link15' },
-      { title: 'Bio Mechanic 2', url: 'https://drive.google.com/link16' },
-      { title: 'Bio Mechanic 3', url: 'https://drive.google.com/link17' },
+      { title: 'Curriculum Reforms', url: 'https://drive.google.com/drive/folders/10hzXH-7jORjs13OFjWTt5yqk0Rvy7Tok' },
+      { title: 'Control & Prevents Disease', url: 'https://drive.google.com/drive/folders/1-C8-nXQpBDPK7SvEdHyYMzusb7vzBrRl' },
+      { title: 'Games 2', url: 'https://drive.google.com/drive/folders/10hz_fqSZ39TBNEdlsX70nvo9nDPHwImA' },
     ],
   },
   // Add Level 1, 2 as needed

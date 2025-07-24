@@ -1,22 +1,108 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import LevelContent from '@/components/LevelContent'
 
+const bannerImages = [
+  '/images/banner.png',
+  '/images/Health Education - Professional Development Banner.png',
+  '/images/Physical Education Banner.png',
+  '/images/banner.png',
+]
+
+const videos = [
+  {
+    title: 'What is Biomechanics?',
+    youtubeId: 'LnM74brIZPE',
+  },
+  {
+    title: 'Biomechanics - Levers',
+    youtubeId: 'V1NC5wOg0TM',
+  },
+  {
+    title: 'Nutrition, Body Composition and Sports Performance',
+    youtubeId: 'MbKF6eDawCE', 
+  },
+  {
+    title: 'The Skeletal System',
+    youtubeId: 'f-FF7Qigd3U', 
+  },
+  {
+    title: 'Muscles and Movement',
+    youtubeId: '-_LBtX9kw4E', 
+  },
+  {
+    title: 'Hydration For Sports Performance',
+    youtubeId: 'Udt49bkTfL8', 
+  },
+  {
+    title: 'Nutrition, Body Composition and Sports Performance',
+    youtubeId: 'MbKF6eDawCE', 
+  },
+  {
+    title: 'COMPLETE Human Anatomy',
+    youtubeId: 'JNTOahIeCfA', 
+  },
+  {
+    title: 'Brainstorming Techniques',
+    youtubeId: 'YXZamW4-Ysk', 
+  },
+  {
+    title: 'Warm - up Activities',
+    youtubeId: 'zSfHIowe9oc', 
+  },
+
+]
+
 export default function Home() {
-  const [selectedLevel, setSelectedLevel] = useState('Level 3')
+  const [selectedSection, setSelectedSection] = useState('Level 3')
+  const [bannerIndex, setBannerIndex] = useState(0)
+
+    useEffect(() => {
+    const interval = setInterval(() => {
+      setBannerIndex((prevIndex) => (prevIndex + 1) % bannerImages.length)
+    }, 2000) // change every 4 seconds
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div className="bg-[#FAF3E3]">
-      <Navbar onLevelChange={setSelectedLevel} />
+      <Navbar onSectionChange={setSelectedSection} />
       <div className="pt-10">
-        <img
-          src="/images/banner.png"
+         <img
+          src={bannerImages[bannerIndex]}
           alt="Banner"
-          className="w-full h-[500px] md:h-[400px] object-cover"
+          className="w-full h-[500px] md:h-[400px] object-cover transition-all duration-700"
         />
-        <LevelContent level={selectedLevel} />
+
+        {selectedSection === 'Videos' ? (
+          <div className="p-6">
+            <h2 className="text-2xl font-bold mb-6">Video Resources</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {videos.map((video, idx) => (
+                <a
+                  key={idx}
+                  href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block border rounded-lg overflow-hidden shadow hover:shadow-lg transition"
+                >
+                  <img
+                    src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
+                    alt={video.title}
+                    className="w-full aspect-video object-cover"
+                  />
+                  <div className="p-4 bg-white group-hover:bg-[#F7F5EF]">
+                    <h2 className="text-sm font-semibold text-[#C68313] group-hover:underline">{video.title}</h2>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <LevelContent level={selectedSection} />
+        )}
       </div>
     </div>
   )
