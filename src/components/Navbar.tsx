@@ -11,7 +11,7 @@ export default function Navbar({ onLevelChange }: { onLevelChange: (level: strin
     const [levelsOpen, setLevelsOpen] = useState(false)
 
     return (
-        <nav className="fixed top-0 z-50 w-full bg-white shadow px-6 py-4 flex items-center justify-between">
+        <nav className="fixed top-0 z-50 w-full bg-[#DDD0AD] shadow px-6 py-4 flex items-center justify-between">
             <div className="text-xl font-bold flex items-center gap-2">
                 <img src="/images/portfolioLogo.png" alt="Logo" className="w-8 h-8" />
                 <span className="text-black">Thadshagini</span>

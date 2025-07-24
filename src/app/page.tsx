@@ -8,7 +8,7 @@ export default function Home() {
   const [selectedLevel, setSelectedLevel] = useState('Level 3')
 
   return (
-    <div>
+    <div className="bg-[#FAF3E3]">
       <Navbar onLevelChange={setSelectedLevel} />
       <div className="pt-10">
         <img
