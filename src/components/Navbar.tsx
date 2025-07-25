@@ -48,10 +48,10 @@ export default function Navbar({ onSectionChange }: { onSectionChange: (section:
                         </div>
                     )}
                 </div>
-                <Link href="https://drive.google.com/drive/folders/1-E7CVLXDy_VOSUtPQoYI4mBm4Thy-DyX" onClick={() => setMenuOpen(false)}>Presentations</Link>
+                <Link href="https://drive.google.com/drive/folders/1-E7CVLXDy_VOSUtPQoYI4mBm4Thy-DyX" className="hover:text-[#C68313]" onClick={() => setMenuOpen(false)}>Presentations</Link>
                 <Link href="#" onClick={() => onSectionChange('Videos')} className="hover:text-[#C68313]">Videos</Link>
-                <Link href="https://drive.google.com/drive/folders/10rQqKBBJG2aALAwA9xAAsoFZs7xPeNfa" onClick={() => setMenuOpen(false)}>Model Papers</Link>
-                <Link href="https://drive.google.com/drive/folders/10rixBEwcV-sNjNf6S3eXMFcuwQTQF5bS" onClick={() => setMenuOpen(false)}>Books</Link>
+                <Link href="https://drive.google.com/drive/folders/10rQqKBBJG2aALAwA9xAAsoFZs7xPeNfa" className="hover:text-[#C68313]" onClick={() => setMenuOpen(false)}>Model Papers</Link>
+                <Link href="https://drive.google.com/drive/folders/10rixBEwcV-sNjNf6S3eXMFcuwQTQF5bS" className="hover:text-[#C68313]" onClick={() => setMenuOpen(false)}>Books</Link>
             </div>
         </nav>
     )
