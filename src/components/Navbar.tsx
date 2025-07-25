@@ -15,7 +15,7 @@ export default function Navbar({ onSectionChange }: { onSectionChange: (section:
             <div className="text-xl font-bold flex items-center gap-2">
                 <img src="/images/portfolioLogo.png" alt="Logo" className="w-8 h-8" />
                 <span className="text-black">Thadshagini</span>
-                <span className="text-[#C68313]">Yokeswaren</span>
+                <span className="text-[#C68313]">Yokeswaran</span>
             </div>
             <div className="md:hidden">
                 <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -48,10 +48,10 @@ export default function Navbar({ onSectionChange }: { onSectionChange: (section:
                         </div>
                     )}
                 </div>
-                <Link href="https://drive.google.com/drive/folders/1-S74NoEG_0-NY5R3vY87Gs4h3qTrUMSr" onClick={() => setMenuOpen(false)}>Presentations</Link>
+                <Link href="https://drive.google.com/drive/folders/1-E7CVLXDy_VOSUtPQoYI4mBm4Thy-DyX" onClick={() => setMenuOpen(false)}>Presentations</Link>
                 <Link href="#" onClick={() => onSectionChange('Videos')} className="hover:text-[#C68313]">Videos</Link>
                 <Link href="https://drive.google.com/drive/folders/10rQqKBBJG2aALAwA9xAAsoFZs7xPeNfa" onClick={() => setMenuOpen(false)}>Model Papers</Link>
-                <Link href="#" onClick={() => setMenuOpen(false)}>Books</Link>
+                <Link href="https://drive.google.com/drive/folders/10rixBEwcV-sNjNf6S3eXMFcuwQTQF5bS" onClick={() => setMenuOpen(false)}>Books</Link>
             </div>
         </nav>
     )

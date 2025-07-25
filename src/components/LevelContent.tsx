@@ -20,7 +20,7 @@ const subjects: Record<string, {
       { title: 'Inclusive Education', url: 'https://drive.google.com/drive/folders/102pQ130Cs6_-AGBZU3-9Ggcrei_fF5FA' },
       { title: 'Performance Assessment', url: 'https://drive.google.com/drive/folders/10H6loJasOnWzEtGg1GbrVD50QN7Stng7' },
       { title: 'Nutrition for Health & Physical Activity', url: 'https://drive.google.com/drive/folders/10Jl0bK5kuZfwFARJASiVq75jDnwgZJth' },
-      { title: 'GIT', url: 'https://drive.google.com/drive/folders/10MBk6TiBAxAGlFtn6p0NVWhBd8swB45W' }
+      { title: 'GTT', url: 'https://drive.google.com/drive/folders/10MBk6TiBAxAGlFtn6p0NVWhBd8swB45W' }
     ],
   },
   'Level 4': {
