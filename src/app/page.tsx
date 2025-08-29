@@ -67,12 +67,12 @@ export default function Home() {
   return (
     <div className="bg-[#FAF3E3] min-h-screen overflow-x-hidden">
       <Navbar onSectionChange={setSelectedSection} />
-      <div className="pl-6 pt-16 w-full">
-         <img
-          src={bannerImages[bannerIndex]}
-          alt="Banner"
-          className="w-full h-[300px] sm:h-[400px] md:h-[400px] object-cover transition-all duration-700"
-        />
+             <div className="pl-6 pt-16 w-full">
+           <img
+            src={bannerImages[bannerIndex]}
+            alt="Banner"
+            className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[450px] object-contain transition-all duration-700"
+          />
 
         {selectedSection === 'Videos' ? (
           <div className="p-6">
