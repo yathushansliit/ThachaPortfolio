@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <div className="bg-[#FAF3E3] min-h-screen overflow-x-hidden">
       <Navbar onSectionChange={setSelectedSection} />
-      <div className="pl-2 pt-16 w-full">
+      <div className="pl-6 pt-16 w-full">
          <img
           src={bannerImages[bannerIndex]}
           alt="Banner"
