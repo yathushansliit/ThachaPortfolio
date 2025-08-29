@@ -60,7 +60,7 @@ export default function Home() {
     useEffect(() => {
     const interval = setInterval(() => {
       setBannerIndex((prevIndex) => (prevIndex + 1) % bannerImages.length)
-    }, 1000) // change every 10 seconds
+    }, 10000) // change every 10 seconds
     return () => clearInterval(interval)
   }, [])
 
