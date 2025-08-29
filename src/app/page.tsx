@@ -60,7 +60,7 @@ export default function Home() {
     useEffect(() => {
     const interval = setInterval(() => {
       setBannerIndex((prevIndex) => (prevIndex + 1) % bannerImages.length)
-    }, 2000) // change every 4 seconds
+    }, 10000) // change every 10 seconds
     return () => clearInterval(interval)
   }, [])
 
@@ -71,7 +71,7 @@ export default function Home() {
          <img
           src={bannerImages[bannerIndex]}
           alt="Banner"
-          className="w-full h-[500px] md:h-[400px] object-cover transition-all duration-700"
+          className="w-full h-[300px] sm:h-[400px] md:h-[400px] object-cover transition-all duration-700"
         />
 
         {selectedSection === 'Videos' ? (

@@ -53,6 +53,7 @@ export default function Navbar({ onSectionChange }: { onSectionChange: (section:
                 <Link href="https://drive.google.com/drive/folders/10rQqKBBJG2aALAwA9xAAsoFZs7xPeNfa" className="hover:text-[#C68313]" onClick={() => setMenuOpen(false)}>Model Papers</Link>
                 <Link href="https://drive.google.com/drive/folders/10rixBEwcV-sNjNf6S3eXMFcuwQTQF5bS" className="hover:text-[#C68313]" onClick={() => setMenuOpen(false)}>Books</Link>
                 <Link href="https://drive.google.com/drive/folders/10rld3DWMyGlKZP3DjAKPHhldvGSfC27r" className="hover:text-[#C68313]" onClick={() => setMenuOpen(false)}>Teaching Aids</Link>
+                <Link href="https://drive.google.com/drive/folders/110HGxUf8kGJ9KGlMKji_BwzBdhrECUco" className="hover:text-[#C68313]" onClick={() => setMenuOpen(false)}>School Health Promotion</Link>
             </div>
         </nav>
     )
