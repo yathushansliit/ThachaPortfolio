@@ -60,14 +60,14 @@ export default function Home() {
     useEffect(() => {
     const interval = setInterval(() => {
       setBannerIndex((prevIndex) => (prevIndex + 1) % bannerImages.length)
-    }, 10000) // change every 10 seconds
+    }, 1000) // change every 10 seconds
     return () => clearInterval(interval)
   }, [])
 
   return (
     <div className="bg-[#FAF3E3] min-h-screen overflow-x-hidden">
       <Navbar onSectionChange={setSelectedSection} />
-      <div className="pt-16 w-full">
+      <div className="pl-2 pt-16 w-full">
          <img
           src={bannerImages[bannerIndex]}
           alt="Banner"
