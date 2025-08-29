@@ -5,10 +5,8 @@ import Navbar from '@/components/Navbar'
 import LevelContent from '@/components/LevelContent'
 
 const bannerImages = [
-  '/images/banner.png',
-  '/images/Health Education - Professional Development Banner.png',
-  '/images/Physical Education Banner.png',
-  '/images/banner.png',
+  '/images/banner1.jpg',
+  '/images/banner2.jpg'
 ]
 
 const videos = [
@@ -67,9 +65,9 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="bg-[#FAF3E3]">
+    <div className="bg-[#FAF3E3] min-h-screen overflow-x-hidden">
       <Navbar onSectionChange={setSelectedSection} />
-      <div className="pt-10">
+      <div className="pt-16 w-full">
          <img
           src={bannerImages[bannerIndex]}
           alt="Banner"
